@@ -1,0 +1,586 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+div#root {
+  height: 100%;
+}
+div#root > div {
+  height: 100%;
+}
+img.map_loading {
+  position: absolute;
+  top: 54px;
+  left: 50%;
+  z-index: 99999;
+}
+div#mainMap {
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑";
+  font-style: normal;
+}
+div#mainMap div.BMap_pop {
+  display: none;
+}
+div#mainMap div.BMap_shadow {
+  display: none;
+}
+div#mainMap p.point3 {
+  color: #fff;
+  vertical-align: top;
+  height: auto;
+  font-size: 0px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 0px;
+  top: -20px;
+}
+div#mainMap p.point3 > i.arrow {
+  top: 20px;
+  left: 10px;
+  height: 8px;
+  width: 10px;
+  position: absolute;
+  background-image: url('../img/arrow.png');
+}
+div#mainMap p.point3 > .num {
+  font-style: normal;
+  background: #e56565;
+  padding: 4px 6px;
+  border-radius: 3px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  vertical-align: top;
+  position: relative;
+  z-index: 99;
+}
+div#mainMap p.point3:hover > i.num {
+  z-index: 999;
+  vertical-align: top;
+  background-color: #c80000;
+}
+div#mainMap p.point3:hover > i.arrow {
+  background-image: url('../img/arrow-hover.png');
+}
+div#mainMap p.point3:hover > i.map_project_detail {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+}
+div#mainMap p.point3 > i.map_project_detail {
+  display: none;
+  color: #333333;
+  position: absolute;
+  height: auto;
+  width: 260px;
+  background-color: #fff;
+  left: -130px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-style: normal;
+  z-index: 999;
+  bottom: 0px;
+  margin-bottom: 27px;
+}
+div#mainMap p.point3 > i.map_project_detail > img.building-detail {
+  display: inline-block;
+  height: 160px;
+  width: 140px;
+}
+div#mainMap p.point3 > i.map_project_detail > img.arrow {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 260px;
+  height: 9px;
+  margin-bottom: -9px;
+}
+div#mainMap p.point3 > i.map_project_detail > div.top-img {
+  font-style: normal;
+  position: relative;
+  display: block;
+  height: 162px;
+  width: 260px;
+  overflow: hidden;
+  text-align: left;
+}
+div#mainMap p.point3 > i.map_project_detail > div.top-img > label {
+  position: absolute;
+  display: block;
+  height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha( opacity=60 )";
+  background-color: #000\9;
+  width: 258px;
+  bottom: 0px;
+  left: 0px;
+  line-height: 26px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+div#mainMap p.point3 > i.map_project_detail > ul {
+  margin-bottom: 0px;
+  padding: 0px 26px;
+}
+div#mainMap p.point3 > i.map_project_detail > ul > li {
+  line-height: 26px;
+  font-size: 14px;
+}
+div#mainMap p.point3 > i.map_project_detail > ul > li > span.area {
+  display: inline-block;
+  text-align: left;
+  width: 80px;
+}
+div#mainMap p.point3 > i.map_project_detail > ul > li > span > a {
+  color: #1f52b2;
+}
+div#mainMap p.point3 > i.map_project_detail > ul > div {
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+}
+div#mainMap p.point3 > i.map_project_detail > ul > div > a {
+  color: #1f52b2;
+}
+div.map_header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background-color: #f1f1f1;
+  height: 44px;
+  padding: 4px;
+  z-index: 999;
+}
+div.map_header > a {
+  float: left;
+}
+div.map_header > a > img {
+  margin-left: 10px;
+}
+div.map_header > div.mode {
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 3.4rem;
+  margin-right: 34px\9;
+  float: right;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+div.map_header > div.mode > img {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 14px;
+  margin-right: 5px;
+}
+div.map_header > div {
+  font-size: 14px;
+  margin-left: 100px;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  width: 100px;
+  text-align: center;
+  margin-top: 3px;
+}
+div.map_header > div > span {
+  margin-right: 6px;
+}
+div.map_header > div:hover > ul {
+  display: block;
+}
+div.map_header > div > ul {
+  padding-left: 0px;
+  display: none;
+  border: 1px solid #ccc;
+  list-style: none;
+  background-color: #eee;
+  z-index: 999;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  width: 81px;
+  top: 26px;
+}
+div.map_header > div > ul > li {
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+div.map_header > div > ul > li:hover {
+  background-color: #fff;
+}
+div.map_left {
+  z-index: 199;
+  position: fixed;
+  left: 0px;
+  top: 45px;
+  width: 275px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  overflow: auto;
+}
+div.map_left > div.top {
+  position: relative;
+  padding: 12px 0px 13px 15px;
+  display: block;
+  height: 60px;
+}
+div.map_left > div.top > ul {
+  max-height: 400px;
+  overflow: auto;
+  position: absolute;
+  width: 120px;
+  height: auto;
+  background-color: #eee;
+  z-index: 1000;
+  top: 47px;
+  left: 15px;
+  width: 235px;
+  display: none;
+  z-index: 999;
+  border: 1px solid #ccc;
+  border-top: 0px;
+}
+div.map_left > div.top > ul > li {
+  padding: 2px 10px;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+div.map_left > div.top > ul > li:hover {
+  background-color: #fff;
+}
+div.map_left > div.top > input {
+  padding: 2px 10px;
+  float: left;
+  height: 35px;
+  line-height: 30px;
+  border: 1px solid #CCC;
+  border-right: 0px;
+  width: 200px;
+  outline: none;
+}
+div.map_left > div.top > #search-btn {
+  float: left;
+  text-shadow: none;
+  height: 35px;
+  width: 35px;
+  border: 1px  solid #CCC;
+  border-left: 1px;
+  background: #ffffff url("../img/iesousou.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+div.map_left > div.item > div.drap_content {
+  height: 60px;
+}
+div.map_left > div.item > div.drap_content > div.slider {
+  height: 35px;
+  width: 200px;
+  border-bottom: 2px solid #c80000;
+  margin: auto;
+  position: relative;
+}
+div.map_left > div.item > div.drap_content > div.slider div.item {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: -10px;
+  margin-bottom: -10px;
+}
+div.map_left > div.item > div.drap_content > div.slider div.item > div {
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+div.map_left > div.item > div.drap_content > div.slider div.item > img {
+  height: 20px;
+  width: 20px;
+}
+div.map_left > div.item > div.item_name {
+  width: 100%;
+  line-height: 30px;
+  background: #f0f0f0;
+  padding-left: 10px;
+  overflow-x: hidden;
+  font-weight: bold;
+}
+div.map_left > div.item > ul.item_content {
+  padding: 10px;
+  text-align: left;
+  line-height: 30px;
+  margin: 0px;
+}
+div.map_left > div.item > ul.item_content > li {
+  color: #777;
+  line-height: 16px;
+  display: inline-block;
+  width: 70px;
+  margin: 0px 4px;
+  padding: 5px 3px;
+  text-align: center;
+  cursor: pointer;
+}
+div.map_left > div.item > ul.item_content > li.active {
+  background-color: #c80000;
+  color: #fff;
+}
+div.building-list {
+  margin-left: 276px;
+  width: auto;
+  padding: 0px 10px 100px 10px\9;
+  padding: 0px 1rem 120px 1rem;
+  margin-top: 44px;
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+}
+div.building-list > div.loading {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+}
+div.building-list > div.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: url(../img/buildingsfooter.png);
+  background-repeat: repeat-x;
+  height: 120px;
+  background-size: contain;
+  line-height: 120px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+div.building-list > div.nobuilding {
+  line-height: 36px;
+  font-size: 24px;
+  color: #777;
+  text-align: center;
+}
+div.building-list > div.nobuilding > img {
+  width: 350px;
+  height: 190px;
+  display: block;
+  margin: auto;
+  margin-top: 54px;
+  margin-bottom: 34px;
+}
+div.building-list > div.nobuilding > a.entrust {
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  margin: auto;
+  background-color: #c80000;
+  margin-top: 34px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+}
+div.building-list > div.top {
+  line-height: 61px;
+  font-size: 14px;
+  color: #333;
+  margin-left: -14px;
+  margin-right: -14px;
+  margin: 0px -1.4rem;
+  padding-left: 2.8rem;
+  padding-left: 28px\9;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  overflow-x: hidden;
+  width: auto;
+}
+div.building-list > div.item {
+  margin: 1.5rem 1rem;
+  margin: 15px 10px\9;
+  display: inline-block;
+  vertical-align: top;
+}
+div.building-list > div.item > div.top {
+  position: relative;
+  width: 21.6rem;
+  width: 216px\9;
+  height: 16.2rem;
+  height: 162\9;
+}
+div.building-list > div.item > div.top > a {
+  width: 100%;
+  height: 100%;
+}
+div.building-list > div.item > div.top > a > .imageloader {
+  width: 100%;
+  height: 100%;
+}
+div.building-list > div.item > div.top > a > .imageloader > img {
+  width: 100%;
+  background-color: #b9c8d4;
+}
+div.building-list > div.item > div.top:hover {
+  box-shadow: 0 0 10px #808080;
+}
+div.building-list > div.item > div.top:hover > ul {
+  display: block;
+}
+div.building-list > div.item > div.top > ul {
+  z-index: 199;
+  background-color: #fff;
+  margin-top: 16.2rem;
+  margin-top: 162px\9;
+  display: none;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  box-shadow: 0 0 10px #808080;
+  border: 1px solid #ccc\9;
+}
+div.building-list > div.item > div.top > ul > li {
+  cursor: pointer;
+  height: 52px;
+  margin: 0px 10px\9;
+  color: #333;
+  font-size: 14px;
+  border-top: 1px dashed #ccc;
+}
+div.building-list > div.item > div.top > ul > li:first-child {
+  border: 0px;
+}
+div.building-list > div.item > div.top > ul > li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px 10px 14px;
+  line-height: 32px;
+  height: 52px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+div.building-list > div.item > div.top > ul > li > a > img {
+  display: none\9;
+}
+@media screen and (max-width: 1270px) {
+  div.building-list > div.item > div.top > ul > li > a > img {
+    display: none;
+  }
+  div.building-list > div.item > div.top > ul > li > a > span.item-price {
+    float: right;
+  }
+}
+div.building-list > div.item > div.top > ul > li > a > span {
+  margin-right: 14px;
+  margin-right: 10px\9;
+  display: inline-block;
+  width: 84px;
+  float: left;
+}
+div.building-list > div.item > div.top > ul > li > a > span.item-price {
+  width: 99px;
+}
+div.building-list > div.item > div.top > ul > li > a > img {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  width: 50px;
+  height: 32px;
+}
+div.building-list > div.item > div.top > ul > li.bottom {
+  text-align: center;
+  font-size: 14px;
+  height: 30px;
+  color: #3a8bbb;
+}
+div.building-list > div.item > div.top > ul > li.bottom > a {
+  padding: 0px;
+  height: 32px;
+  line-height: 32px;
+  color: #3a8bbb;
+}
+div.building-list > div.item > div.top > div.name {
+  position: absolute;
+  height: 3.4rem;
+  height: 34px\9;
+  background-image: url('../img/background.png');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  line-height: 3.4rem;
+  line-height: 34px\9;
+  font-size: 18px;
+  font-size: 16px\9;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding-left: 1rem;
+  padding-left: 10px\9;
+  max-height: 40px;
+}
+@media screen and (max-width: 1300px) {
+  div.building-list > div.item > div.top > div.name {
+    font-size: 16px;
+  }
+}
+div.building-list > div.item > div.bottom {
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-top: 10px\9;
+  line-height: 2rem;
+  line-height: 20px\9;
+}
+div.building-list > div.item > div.bottom > span.price {
+  color: #c80000;
+  font-size: 18px;
+  font-size: 16px\9;
+  font-weight: bold;
+}
+@media screen and (max-width: 1300px) {
+  div.building-list > div.item > div.bottom > span.price {
+    font-size: 16px;
+  }
+}
+div.building-list > div.item > div.bottom > span.price > span.unit {
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 14px\9;
+}
+@media screen and (max-width: 1300px) {
+  div.building-list > div.item > div.bottom > span.price > span.unit {
+    font-size: 14px;
+  }
+}
+div.building-list > div.item > div.bottom > span.num {
+  font-size: 16px;
+  font-size: 14px\9;
+  color: #333;
+  float: right;
+}
+@media screen and (max-width: 1300px) {
+  div.building-list > div.item > div.bottom > span.num {
+    font-size: 14px;
+  }
+}

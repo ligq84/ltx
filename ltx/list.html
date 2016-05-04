@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>楼天下写字楼出租-上海写字楼出租-苏州写字楼出租-楼天下官网</title>
+    <meta name="keywords" content="上海办公室出租、上海写字楼出租、上海商务中心出租、上海产业园出租、上海创业园出租、苏州办公
+
+室出租、苏州写字楼出租、苏州商务中心出租、苏州产业园出租、苏州创业园出租、苏州写字楼租赁网、上海写字楼出租网、写字楼租赁、
+
+办公室出租。">
+
+<meta name="description" content="楼天下提供上海、苏州最真实写字楼出租、免费装修设计，为广大企业提供最优质的服务和最真实的
+
+房源。">
+    <!-- Bootstrap -->
+    <link href="build/business.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.min.js"></script>
+      <script src="lib/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="item_header">
+      <a href="index.html"><img src="img/logo.png"/ height=33px width=73px></a>
+      <div id="city">
+      <span>上海</span>
+      <img src="img/arrow_bottom_grey.png" width="8" height="4px" alt="">
+    </div>
+  </header>
+
+  <div class="sidebar">
+
+
+        <div class="top">
+          <input type="text" placeholder="请输入楼盘名称" class="index-input"><div id="search-btn"></div>
+
+        </div>
+
+    <dl class="cond-group" style="position:relative">
+      <ul class="auto-complete" style="top:-15px;left:16px;width:234px;">
+
+
+      </ul>
+      <dt>区域</dt>
+      <dd class="cond" id="area">
+        <div class="region" id="district">
+        </div>
+
+      </dd>
+    </dl>
+
+    <dl class="cond-group">
+      <dt>面积 <span style="font-weight:normal">(m<sup>2</sup>)</span></dt>
+      <dd class="">
+        <div class="bar_box" id="areaBox">
+            <div id="min" class="circle">
+                <div class="text">
+                    0m<sup>2</sup>
+                </div>
+                <img src="img/btn.png" alt="" height="20px" height="20px;" />
+            </div>
+            <div class="line">
+
+            </div>
+            <div id="max" class="circle">
+              <div class="text">
+                    2000+m<sup>2</sup>
+              </div>
+                <img src="img/btn.png" alt="" height="20px" height="20px;" />
+            </div>
+        </div>
+      </dd>
+    </dl>
+
+    <dl class="cond-group">
+      <dt>租金 <span style="font-weight:normal">(元/m<sup>2</sup>天)</span></dt>
+      <dd class="">
+        <div class="bar_box" id="priceBox">
+            <div id="min" class="circle">
+                <div class="text">
+
+                </div>
+                <img src="img/btn.png" alt="" height="20px" height="20px;" />
+            </div>
+            <div class="line">
+
+            </div>
+            <div id="max" class="circle">
+              <div class="text">
+                    9元/m<sup>2</sup>天
+              </div>
+                <img src="img/btn.png" alt="" height="20px" height="20px;" />
+            </div>
+        </div>
+      </dd>
+    </dl>
+
+</div>
+
+<div class="list_main" id="buildings">
+    <div class="top">
+      找到<span id="number"></span>套符合要求的<span id="location"></span>租房
+
+    </div>
+    <div class="loading">
+    <img src="img/loading.gif" alt="" />
+  </div>
+
+  <!-- <div class="item">
+    <img src="img/list-right.png" alt=""  width="200px" height="150px"/>
+    <div class="desc">
+      <h4>香港广场</h4>
+      <span>卢湾淮海中路283号/嵩山路</span><br>
+      <span>m<sup>2</sup>均租金：</span><span class="money"> 10元/m<sup>2</sup>.天</span><br>
+      <a href="#">项目详情</a>
+      <a href="#">在租房源</a>
+
+    </div>
+    <div class="right">
+      <ul>
+        <a href="">
+          <img src="" alt=""  height="100px" width="160px"/>
+          <span class="left">暂无m<sup>2</sup> </span><span class="right">元/m<sup>2</sup>.天</span>
+        </a>
+      </ul>
+      <span>
+        1套房源符合条件
+      </span>
+    </div>
+  </div> -->
+
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+    <script type="text/javascript" src="lib/drag-drop.min.js"></script>
+<script type="text/javascript" src="lib/jquery.dragdrop.js"></script>
+    <script type="text/javascript" src="build/common.js"></script>
+    <script type="text/javascript" src="build/list.js"/></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?625deefb2b6da0e2a5384e5f6b64f37e";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </body>
+</html>

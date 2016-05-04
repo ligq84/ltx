@@ -1,0 +1,200 @@
+div.service {
+  background: url("../img/service-bg.png");
+  background-repeat: repeat-x;
+  background-color: #e3eff9;
+}
+div.service > img {
+  width: 190px;
+  height: 100px;
+  margin: auto;
+  display: block;
+}
+div.service > section {
+  width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  font-size: 0px;
+}
+div.service > section > a {
+  display: inline-block;
+  height: 167px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-right: 1px solid #ccc;
+  width: 333px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 60px;
+}
+div.service > section > a.last {
+  border: 0px;
+}
+div.service > section > a div.top {
+  height: 124px;
+}
+div.service > section > a div.top > img {
+  width: 182px;
+  height: 112px;
+  margin: auto;
+  display: block;
+}
+div.service > section > a span.red {
+  font-size: 18px;
+  color: #c80000;
+  font-weight: bold;
+}
+div.service-detail {
+  min-height: 240px;
+}
+div.service-detail > div.detail-top {
+  background-color: #c80000;
+  height: 124px;
+}
+div.service-detail > div.detail-top > div.wrap {
+  width: 1000px;
+  height: 124px;
+  padding-top: 80px;
+  padding-left: 170px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+div.service-detail > div.detail-top > div.wrap > div.img {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  padding-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: #fff;
+}
+div.service-detail > div.detail-top > div.wrap > div.img > img {
+  width: 130px;
+}
+div.service-detail > div.wrap {
+  width: 1000px;
+  margin: auto;
+}
+div.service-detail > div.wrap > div.right {
+  text-align: center;
+  float: right;
+  width: 300px;
+  background: #f1f7fc;
+  padding: 10px 17px 40px 17px;
+  line-height: 90px;
+  font-size: 28px;
+  color: #333;
+}
+div.service-detail > div.wrap > div.right > input {
+  display: block;
+  width: 266px;
+  margin-bottom: 10px;
+  height: 34px;
+  border: 1px solid #ccc;
+  line-height: 34px;
+  color: #333;
+  border-radius: 8px;
+  font-size: 14px;
+  padding-left: 14px;
+}
+div.service-detail > div.wrap > div.right > div.error {
+  height: 20px;
+  color: #c80000;
+  line-height: 12px;
+  font-size: 12px;
+}
+div.service-detail > div.wrap > div.right > div.sure {
+  height: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  width: 266px;
+  color: #c80000;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  background: #c80000;
+}
+div.service-detail > div.wrap > div.content {
+  text-align: center;
+  width: 700px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+}
+div.service-detail > div.wrap > div.content > div.top {
+  margin-left: 170px;
+  text-align: left;
+  line-height: 74px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+div.service-detail > div.wrap > div.content > div.top > span.red {
+  font-size: 34px;
+  color: #c80000;
+}
+div.service-detail > div.wrap > div.content > section {
+  text-align: left;
+  margin-top: 40px;
+}
+div.service-detail > div.wrap > div.content > section > div.title {
+  line-height: 20px;
+  font-size: 16px;
+  color: #c80000;
+  font-weight: bold;
+}
+div.service-detail > div.wrap > div.content > section > div.content {
+  padding-top: 19px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+}
+div.service-detail > div.wrap > div.content > section > div.content span.red {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c80000;
+}
+div.service-detail > div.wrap > div.content > section > div.content > p {
+  margin: 0;
+  padding: 0;
+  text-indent: 2em;
+}
+div.service-success {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+div.service-success > section {
+  overflow: hidden;
+  width: 341px;
+  margin: auto;
+  margin-top: 160px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+div.service-success > section > div.title {
+  line-height: 120px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+div.service-success > section > div.sure {
+  margin: auto;
+  width: 172px;
+  height: 58px;
+  line-height: 58px;
+  color: #fff;
+  font-size: 24px;
+  background-color: #e56565;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

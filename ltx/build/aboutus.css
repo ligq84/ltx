@@ -1,0 +1,117 @@
+div.aboutus-top {
+  height: 100px;
+  background-color: #C80000;
+  padding-top: 30px;
+}
+div.aboutus-top img {
+  width: 187px;
+  height: 45px;
+}
+article.aboutus-brief {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+article.aboutus-brief span {
+  line-height: 24px;
+  font-size: 14px;
+  text-indent: 2em;
+  display: block;
+  color: #333;
+}
+article.aboutus-brief span#company {
+  display: inline;
+}
+article.aboutus-brief > p {
+  text-align: center;
+}
+div.aboutus-address {
+  font-size: 0px;
+}
+div.aboutus-address section {
+  padding-bottom: 100px;
+  display: inline-block;
+  line-height: 24px;
+  width: 500px;
+  color: #333;
+  font-size: 14px;
+}
+div.aboutus-address section > header {
+  line-height: 14px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #C80000;
+  font-weight: bold;
+}
+div.aboutus-address section > span {
+  margin-left: 28px;
+}
+div.aboutus-address section > img {
+  margin-left: 28px;
+  width: 440px;
+  height: 314px;
+}
+div.contactus-content {
+  padding-top: 10px;
+  vertical-align: top;
+  font-size: 0px;
+  padding-bottom: 70px;
+}
+div.contactus-content ul.left {
+  display: inline-block;
+}
+div.contactus-content ul.left > li {
+  padding-left: 30px;
+  width: 242px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+div.contactus-content ul.left > li.active {
+  color: #fff;
+  background-color: #c80000;
+}
+div.contactus-content ul.left > li.active > img {
+  position: absolute;
+  right: -10px;
+  top: 0px;
+  display: block;
+}
+div.contactus-content ul.left > li > img {
+  display: none;
+}
+div.contactus-content article {
+  margin-left: 30px;
+  vertical-align: top;
+  min-height: 500px;
+  display: inline-block;
+  width: 700px;
+  line-height: 34px;
+}
+div.contactus-content article span {
+  padding: 0px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+div.contactus-content article span.position {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  width: 484px;
+  line-height: 34px;
+  display: inline-block;
+}
+div.contactus-content article span.label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  width: 84px;
+  line-height: 34px;
+  display: inline-block;
+}
+div.contactus-content article span.red {
+  color: #c80000;
+}

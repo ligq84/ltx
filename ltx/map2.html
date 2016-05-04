@@ -1,0 +1,103 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<title>楼天下-地图找房</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<style type="text/css">
+  body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+  </style>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9f5756f6e17e74bdcebaf27ef320edeb"></script>
+</head>
+<body>
+<div class="map_header">
+	<div class="header">
+		<a href="index.html" class="logo"><img src="img/logo.png" style="height:33px;width:73px"></a>
+		<div class="index_goal">
+			<span>上海</span><a href="#"><img src="img/goal.png"></a>
+		</div>
+		<div class="fr">
+			<div class="icon">列表找房<img src="img/list.png"></div>
+			<div class="icon">地图找房<img src="img/map_icon.png"></div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+<div class="sousou">
+	<div class="ml20 pt10">
+		
+		<div class="city-pull-down fl">
+			<span>区域</span>
+			<ul>
+		        <li><a href="#">深圳</a></li>
+		        <li><a href="#">广州</a></li>
+		        <li><a href="#">上海</a></li>
+		    </ul>
+			<img src="img/arrow_bottom_grey.png" width="8" height="4" alt="">
+		</div>
+		<div class="city-pull-down fl" style="border-left:0px">
+			<span>面积</span>
+			<ul>
+		        <li><a href="#">100平米</a></li>
+		        <li><a href="#">200平米</a></li>
+		        <li><a href="#">300平米</a></li>
+		    </ul>
+			<img src="img/arrow_bottom_grey.png" width="8" height="4" alt="">
+		</div>
+		<div class="city-pull-down fl" style="border-left:0px">
+			<span>租金</span>
+			<ul>
+	            <li><a href="#">100</a></li>
+	            <li><a href="#">200</a></li>
+	            <li><a href="#">300</a></li>
+	        </ul>
+			<img src="img/arrow_bottom_grey.png" width="8" height="4" alt="">
+		</div>
+		<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;请输入楼盘名称或地址" class="index-input fl">
+	</div>
+</div>
+<div class="map-box">
+	<div id="allmap"></div>
+</div>
+<div class="footer " style="display:none">
+	<div class="friendlink w1000">
+		<a href="#">阿里巴巴集团</a>
+		<a href="#">阿里巴巴国际站</a>
+		<a href="#">阿里巴巴中国站</a>
+		<a href="#">球速卖通</a>
+		<a href="#">淘宝网</a>
+		<a href="#">天猫聚划算</a>
+		<a href="#">淘阿里妈妈</a>
+		<a href="#">阿里旅行</a>
+		<a href="#">去啊</a>
+		<a href="#">阿里云计算</a>
+		<a href="#">YunOS</a>
+		<a href="#">阿里通信</a>
+		<a href="#">来往</a>
+		<a href="#">支付宝</a>
+		<a href="#">万网</a>
+		<a href="#">高德优视</a>
+		<a href="#">友盟酷盘</a>
+		<a href="#">虾米</a>
+		<a href="#">天天动听</a>
+		<a href="#">钉钉</a>
+	</div>
+	<div class="copyright w1000">
+		<div class="hotline">热线：<span>400-800-8888</span>（周一至周五 早上8:00-晚上7:00）</div>
+		<div class="siteinfo">
+			<span>©2007-2015楼天下</span>
+			<span>文网文[2011]0012-005</span>
+			<span>沪ICP备08103200号-2</span>
+			<span>网站地图</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+  // 百度地图API功能
+  var map = new BMap.Map("allmap");    // 创建Map实例
+  map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+  map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+  map.setCurrentCity("上海");          // 设置地图显示的城市 此项是必须设置的
+  map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>

@@ -1,0 +1,349 @@
+a {
+  color: #777;
+}
+a:hover {
+  color: #777;
+  text-decoration: none;
+}
+a.qiyefuwu {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+a.qiyefuwu > img {
+  width: 1000px;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+nav.index {
+  position: relative;
+  height: 621px;
+}
+nav.index > img.arrow {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 100px;
+  top: 40%;
+  z-index: 999;
+  position: absolute;
+}
+nav.index > img.arrow.left {
+  left: 20px;
+}
+nav.index > img.arrow.right {
+  right: 20px;
+}
+nav.index > ul.banner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+nav.index > ul.banner > li {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+nav.index > ul.banner > li.banner1 {
+  background: url(../img/banner1.jpg) center no-repeat;
+  background-size: auto 100%;
+  display: block;
+}
+nav.index > ul.banner > li.banner2 {
+  background: url(../img/banner2.jpg) center no-repeat;
+  background-size: auto 100%;
+}
+nav.index > ul.banner > li.banner3 {
+  background: url(../img/banner3.jpg) center no-repeat;
+  background-size: auto 100%;
+}
+nav.index > header {
+  z-index: 999;
+  height: 71px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+nav.index > header > div.wrap {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+}
+nav.index > header > div.wrap > a {
+  display: block;
+  height: 47px;
+  width: 112px;
+  margin-right: 20px;
+  float: left;
+}
+nav.index > header > div.wrap > div#city {
+  font-size: 14px;
+  width: 80px;
+  float: left;
+  height: 27px;
+  margin-top: 20px;
+  line-height: 26px;
+  position: relative;
+  color: #fff;
+}
+nav.index > header > div.wrap > div#city:hover > ul {
+  position: absolute;
+  width: 60px;
+  padding-left: 0px;
+  display: block;
+  background-color: #eee;
+  list-style: none;
+  z-index: 999;
+}
+nav.index > header > div.wrap > div#city:hover > ul > li {
+  line-height: 26px;
+}
+nav.index > header > div.wrap > div#city:hover > ul > li:hover {
+  background-color: #fff;
+}
+nav.index > header > div.wrap > div#city > img {
+  margin-bottom: 0px;
+}
+nav.index > header > div.wrap > div#city > ul {
+  left: -15px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+nav.index > header > div.wrap > p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #FFF;
+}
+nav.index > header > div.wrap > p > a {
+  color: #fff;
+}
+nav.index div.black {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 999;
+  padding-top: 20px;
+  height: 94px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-color: #000\9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha( opacity=45 )";
+}
+nav.index div.black > div.search {
+  padding-left: 40px;
+  width: 1000px;
+  font-size: 0px;
+  margin: auto;
+}
+nav.index div.black > div.search > input {
+  line-height: 46px;
+  height: 54px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 1px;
+  font-size: 14px;
+  width: 288px;
+  outline: none;
+  padding: 2px;
+  background: #FFF;
+  border: 1px  solid #ccc;
+  border-right: 0px;
+  padding-left: 10px;
+}
+nav.index div.black > div.search > div {
+  text-align: right;
+  vertical-align: top;
+  display: inline-block;
+  padding: 14px;
+  font-size: 14px;
+  width: 140px;
+  height: 54px;
+  background-color: #fff;
+  position: relative;
+  line-height: 26px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-right: 0px;
+  background: #fff;
+}
+nav.index div.black > div.search > div#acreage {
+  width: 140px;
+}
+nav.index div.black > div.search > div#rent {
+  width: 140px;
+}
+nav.index div.black > div.search > div#search-btn {
+  width: 90px;
+  background-color: #c80000;
+  border: 0px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+nav.index div.black > div.search > div#search-map {
+  margin-left: 20px;
+  width: 100px;
+  line-height: 26px;
+  background-color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+nav.index div.black > div.search > div > span {
+  float: left;
+}
+nav.index div.black > div.search > div > ul {
+  display: none;
+}
+nav.index div.black > div.search > div:hover > ul {
+  display: block;
+  background-color: #fff;
+  left: -1px;
+  position: absolute;
+  top: 52px;
+  z-index: 999;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+nav.index div.black > div.search > div:hover > ul > li {
+  font-size: 10px;
+  width: 101;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #777;
+  font-size: 15px;
+  background: #eee;
+}
+nav.index div.black > div.search > div:hover > ul > li > div.plate_list {
+  display: none;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover {
+  background-color: #fff;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list {
+  top: -1px;
+  position: absolute;
+  width: 279px;
+  left: 140px;
+  background-color: #fff;
+  display: block;
+  padding-left: 0px;
+  border: 1px solid #ccc;
+  border-left: 0px;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list > div {
+  text-align: left;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list > div > span {
+  margin-left: 20px;
+  display: inline-block;
+  width: 15px;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list > div > div {
+  margin-left: 10px;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list > div > a {
+  margin-left: 10px;
+}
+nav.index div.black > div.search > div:hover > ul > li:hover > div.plate_list > div > a:hover {
+  color: #c80000;
+}
+div.option {
+  padding-top: 56px;
+  height: 208px;
+  background-color: #fff;
+}
+div.option > div {
+  width: 1000px;
+  margin: auto;
+  font-size: 0px;
+}
+div.option > div > div {
+  vertical-align: top;
+  width: 333px;
+  display: inline-block;
+}
+div.option > div > div > header {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 18px;
+  height: 18px;
+  font-weight: bold;
+}
+div.option > div > div > div {
+  text-align: center;
+  padding: 0px 25px;
+}
+div.option > div > div > div > a {
+  display: inline-block;
+  color: #333;
+  padding: 1px 7px;
+  font-size: 14px;
+  line-height: 28px;
+}
+div.hot {
+  background-color: #fff;
+}
+div.hot > div.wrap {
+  width: 1006px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+div.hot > div.wrap > img {
+  width: 205px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+div.hot > div.wrap > div.content {
+  font-size: 0px;
+}
+div.hot > div.wrap > div.content > a {
+  overflow: hidden;
+  position: relative;
+  margin: 0px 2px 6px 3px;
+  display: inline-block;
+}
+div.hot > div.wrap > div.content > a.top {
+  width: 330px;
+  height: 248px;
+}
+div.hot > div.wrap > div.content > a.bottom {
+  width: 497px;
+  height: 312px;
+}
+div.hot > div.wrap > div.content > a > footer {
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: transparent;
+  background-image: url(../img/word-bg.png);
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  padding-left: 15px;
+}
+div.hot > div.wrap > div.content > a:hover {
+  box-shadow: 0 0 10px #808080;
+}
+.wrap {
+  width: 1000px;
+  margin: auto;
+}

@@ -1,0 +1,137 @@
+div.entrust,
+div.release {
+  height: 656px;
+}
+div.entrust > div.wrap,
+div.release > div.wrap {
+  width: 1000px;
+  margin: auto;
+}
+div.entrust > div.wrap > div.content,
+div.release > div.wrap > div.content {
+  height: 656px;
+  width: 430px;
+  float: right;
+  background-color: #f1f7fc;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+div.entrust > div.wrap > div.content > div.title,
+div.release > div.wrap > div.content > div.title {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+div.entrust > div.wrap > div.content > div.title > img,
+div.release > div.wrap > div.content > div.title > img {
+  width: 127px;
+  height: 31px;
+  display: inline-block;
+}
+div.entrust > div.wrap > div.content > input,
+div.release > div.wrap > div.content > input,
+div.entrust > div.wrap > div.content textarea,
+div.release > div.wrap > div.content textarea {
+  border-radius: 8px;
+  background-color: #fff;
+  height: 48px;
+  border: 1px solid #ccc;
+  color: #666;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 46px;
+  width: 100%;
+}
+div.entrust > div.wrap > div.content > input.thin,
+div.release > div.wrap > div.content > input.thin,
+div.entrust > div.wrap > div.content textarea.thin,
+div.release > div.wrap > div.content textarea.thin {
+  width: 178px;
+  float: left;
+}
+div.entrust > div.wrap > div.content > input.thin.right,
+div.release > div.wrap > div.content > input.thin.right,
+div.entrust > div.wrap > div.content textarea.thin.right,
+div.release > div.wrap > div.content textarea.thin.right {
+  float: right;
+}
+div.entrust > div.wrap > div.content > textarea,
+div.release > div.wrap > div.content > textarea {
+  height: 158px;
+}
+div.entrust > div.wrap > div.content > div.button,
+div.release > div.wrap > div.content > div.button {
+  background-color: #e56565;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+div.entrust > div.wrap > div.content > div.error,
+div.release > div.wrap > div.content > div.error {
+  text-align: center;
+  height: 36px;
+  line-height: 18px;
+  color: #e56565;
+  font-size: 12px;
+}
+div.entrust-release-success {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+div.entrust-release-success > section {
+  width: 416px;
+  height: 294px;
+  margin: auto;
+  margin-top: 161px;
+  top: 161px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+div.entrust-release-success > section > div.title {
+  padding: 36px 0px 31px 0px;
+  line-height: 32px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+div.entrust-release-success > section > div.content {
+  padding: 0px 30px;
+  line-height: 26px;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+div.entrust-release-success > section > div.sure {
+  margin: auto;
+  margin-top: 60px;
+  width: 172px;
+  height: 58px;
+  line-height: 58px;
+  color: #fff;
+  font-size: 24px;
+  background-color: #e56565;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+div.entrust {
+  background: url('../img/weituozhaolou.png') center no-repeat;
+  background-size: auto 100%;
+}
+div.release {
+  background: url('../img/fabufangyuan.png') center no-repeat;
+  background-size: auto 100%;
+}

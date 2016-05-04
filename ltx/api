@@ -1,0 +1,351 @@
+首页
+1
+/loadCity
+功能：根据ip获取当前城市信息
+请求参数：无
+返回值说明：当前城市名称,城市id已存进cookie中
+返回示例：{"data":"苏州","status":1}
+
+2
+/
+功能：根据当前城市id获取存在可租房源的地区信息
+请求参数：无
+返回值说明：当前区id及区名称
+返回示例：{"data":[{"id":806,"name":"徐汇区"},{"id":807,"name":"测试区"}],"status":1}
+
+
+3
+/findPlate/{districtId}
+功能：根据当前区id获取存在可租房源的商圈信息
+请求参数：区id
+返回值说明：商圈id，商圈名，py:商圈名第一个字的拼音
+返回示例：{"data":[{"id":12,"name":"万体馆","py":"W"}],"status":1}
+
+4
+/loadDistrictTree
+功能：获取当前城市可租地区及商圈信息
+请求参数：无
+返回值说明：类似于省市区json，commList指的是当前地区下商圈list,py:商圈名第一个字首字母拼音
+返回示例：{"data":[{"commList":[{"id":12,"name":"万体馆","py":"W"}],"id":806,"name":"徐汇区"}],"status":1}
+
+
+
+
+
+
+
+列表页
+
+1
+/loadCity 同首页
+
+2
+/findArea 同首页
+
+3.
+/findPlate/{districtId} 同首页
+
+4.
+/building/list
+功能：筛选查询楼盘及房源信息
+请求参数：
+	 *  searchName 楼盘名称或地址（模糊查询项）
+	 *  districtId 区id
+	 *  commId 板块id(商圈id)
+	 *  minArea 最小面积
+	 *  maxArea 最大面积
+	 *  minPrice 最小单价
+	 *  maxPrice 最大单价
+	 *  sortBy 排序方式 1 更新时间（默认） 2 价格
+	 *  curPage 当前页
+	 *  pageSize 每页显示几条
+	 *  showNum 每个楼盘显示多少条房源信息
+	 *  desc 升序还是降序 1 升序  2 降序
+
+返回值说明：totalCount当前筛选条件下总数；buildingId楼盘id;buildingName楼盘名；buildingAddress楼盘地址；suitableNum符合条件的房源数；averageRent 平均租金；buildingImage楼盘封面；unitList楼盘下房源列表；groupId房源id;rent房源租金；unitArea房源面积；unitImage房源图片
+返回示例：
+{
+    "data": {
+        "currpage": 1,
+        "resultList": [{
+            "buildingAddress": "相成大道1609号",
+            "buildingId": 7,
+            "buildingName": "月星环球港",
+            "suitableNum": 180,
+            "unitList": [{
+                "groupId": 1812,
+                "rent": 76253,
+                "unitArea": 1337
+            },
+            {
+                "groupId": 2208,
+                "rent": 85361,
+                "unitArea": 1376
+            },
+            {
+                "groupId": 2326,
+                "rent": 63254,
+                "unitArea": 973
+            },
+            {
+                "groupId": 2240,
+                "rent": 78039,
+                "unitArea": 1238
+            }]
+        }],
+        "totalCount": 180,
+        "totalpages": 13
+    },
+    "status": 1
+}
+
+
+楼盘详情页
+
+
+1
+/building/info/{buildingId}
+功能：获取楼盘详细信息
+请求参数：楼盘id
+返回值说明：一堆，具体联调时沟通
+返回示例：
+{
+    "data": {
+        "address": "相成大道1609号",
+        "aircondition": "VRV",
+        "buildYears": "",
+        "businessFloorFrom": 1,
+        "businessFloorTo": 4,
+        "cityId": 802,
+        "cityName": "上海",
+        "commId": 12,
+        "commName": "万体馆",
+        "contactCooperateType": "",
+        "contactDeposit": "",
+        "contactMobile": "18913141206",
+        "contactName": "",
+        "contactPayType": "",
+        "contactTel": "",
+        "createdTime": 1435680000000,
+        "createduserid": -1,
+        "delayCharge": "",
+        "departmentId": 3,
+        "departmentName": "市场部",
+        "deposit": "",
+        "description": "",
+        "developers": "",
+        "districtId": 806,
+        "districtName": "徐汇区",
+        "electricCurrent": "",
+        "electricVoltage": "",
+        "employeeId": 3,
+        "employeeName": "王婷",
+        "floorLoading": "",
+        "fullName": "月星环球港",
+        "goodLiftBrand": "进口三菱",
+        "goodLiftCount": 1,
+        "id": 7,
+        "isTax": 1,
+        "landNo": "",
+        "landStatus": "1",
+        "officeFloorFrom": 19,
+        "officeFloorTo": 33,
+        "officeVolume": 128892,
+        "parkingFeeDown": 200,
+        "parkingSpaceDown": 650,
+        "parkingSpaceUp": 60,
+        "passengerLiftBrand": "进口三菱",
+        "passengerLiftCount": 3,
+        "payStantard": "",
+        "propertyContact": "",
+        "propertyContactMobile": "",
+        "propertyContactTel": "",
+        "propertyDeposit": "",
+        "propertyFee": "6.5",
+        "propertyName": "",
+        "propertyPayType": "",
+        "refugeFloorFrom": 20,
+        "remark": "",
+        "rentDiscount": "",
+        "rentMax": 1.8,
+        "rentMin": 1.67,
+        "rentYear": 2,
+        "roomRate": 70,
+        "shortName": "yxhqg",
+        "standardFloorArea": 1337,
+        "type": "1",
+        "updatedTime": 1435680000000,
+        "updateduserid": -1,
+        "useYears": "",
+        "water": "否",
+        "xPoint": "120.642814",
+        "yPoint": "31.381468"
+    },
+    "status": 1
+}
+
+
+
+2.
+/unit/findRentByBuildingId
+功能：获取楼盘详细信息
+请求参数：{} buildingId 楼盘id limitNum查询数目 （第一次只查询8条，limitNum传值为8，当点击查询全部，无需传递limitNum）
+返回值说明：房源id，房源租金，房源面积，房源图
+返回示例：
+{
+    "data": [{
+        "groupId": 1804,
+        "rent": 73577,
+        "unitArea": 1337
+    },
+    {
+        "groupId": 1811,
+        "rent": 74915,
+        "unitArea": 1337
+    },
+    {
+        "groupId": 1812,
+        "rent": 76253,
+        "unitArea": 1337
+    },
+    {
+        "groupId": 1813,
+        "rent": 77591,
+        "unitArea": 1337
+    },
+    {
+        "groupId": 1814,
+        "rent": 60141,
+        "unitArea": 1002
+    },
+    {
+        "groupId": 1815,
+        "rent": 61144,
+        "unitArea": 1002
+    },
+    {
+        "groupId": 1816,
+        "rent": 62146,
+        "unitArea": 1002
+    },
+    {
+        "groupId": 1817,
+        "rent": 48302,
+        "unitArea": 743
+    }],
+    "status": 1
+}
+
+3
+/findSiteByBuildingId/{buildingId}
+功能：获取当前楼盘的坐标
+请求参数：楼盘id
+返回值说明：不详
+返回示例：不详
+
+
+
+
+
+
+房源详情页
+
+1
+/unit/info/{unitGroupId}
+功能：获取房源信息
+请求参数：房源id
+返回值说明：一堆，具体联调时再详细说明
+返回示例：
+{
+    "data": {
+        "blockId": 9,
+        "buildingId": 7,
+        "decorate": "2",
+        "floorId": 197,
+        "floorNo": "19",
+        "id": 1804,
+        "orientation": "东南",
+        "rentPrice": 73577.9,
+        "rentStatus": 2,
+        "rentUnitPrice": 1.83333,
+        "sellStatus": 3,
+        "unitArea": 1337.78,
+        "unitIds": "277",
+        "unitNos": "01"
+    },
+    "status": 1
+}
+
+2.
+/unit/search
+功能：根据楼盘id,房源面积，查找当前楼盘里，符合条件的房源信息
+请求参数：buildingId楼盘id;minArea最小面积；maxArea最大面积
+返回值说明：房源id，房源租金，房源面积
+返回示例：
+{
+    "data": [{
+        "groupId": 2189,
+        "rent": 7847,
+        "unitArea": 126
+    },
+    {
+        "groupId": 2206,
+        "rent": 11682,
+        "unitArea": 188
+    },
+    {
+        "groupId": 2250,
+        "rent": 11443,
+        "unitArea": 186
+    },
+    {
+        "groupId": 2308,
+        "rent": 12452,
+        "unitArea": 191
+    }],
+    "status": 1
+}
+
+3
+/unit/like/{unitGroupId}
+功能：获取相似房源
+请求参数：当前房源id
+返回值说明：房源id，房源租金，房源面积,房源图
+返回示例：
+
+
+4
+/findSiteByBuildingId/{buildingId}
+功能：获取当前楼盘的坐标
+请求参数：楼盘id
+返回值说明：不详
+返回示例：不详
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+地图页
+
+1
+/map/findDistrictStat
+功能： 获取当前城市各个区的房源统计
+请求参数：无
+返回值说明：不详
+返回示例：不详
+
+2
+/map/findCommStat/{districtId}
+功能： 获取当前区各个商圈的房源统计
+请求参数：区id
+返回值说明：不详
+返回示例：不详

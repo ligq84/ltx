@@ -1,0 +1,41 @@
+
+export const INIT ="INIT"
+export const UPDATE_BUILDINGS="UPDATE_BUILDINGS";
+export const LOAD_DISTRICTS="UPDATE_BUILDINGS";
+export const CLEAR_DISTRICT="CLEAR_DISTRICT";
+export const LOAD_CITYS="LOAD_CITYS";
+export const INIT_CONDITION="INIT_CONDITION";
+export const INIT_CITY="INIT_CITY";
+export const CHANGE_CITY="CHANGE_CITY";
+export const INIT_DISTRICT="INIT_DISTRICT";
+export const LOAD_COMMS="LOAD_COMMS";
+export const INIT_COMM="INIT_COMM";
+export const CHANGE_COMM="CHANGE_COMM";
+export const CLEAR_COMM ="CLEAR_COMM"
+// export const RESET_COMM="RESET_COMM";
+
+
+export const INIT_INPUT="INIT_INPUT";
+
+
+export const START_FETCH = "START_FETCH";
+export const LOAD_BUILDINGS="LOAD_BUILDINGS";
+export const REMOVE_BUILDINGS="REMOVE_BUILDINGS";
+
+
+export const INIT_AREA="INIT_AREA";
+export const CHANGE_AREA="CHANGE_AREA";
+
+export const INIT_PRICE="INIT_PRICE";
+export const CHANGE_PRICE="CHANGE_PRICE";
+
+export const ADD_BUILDINGS="ADD_BUILDINGS";
+
+export const INIT_MAP="INIT_MAP";
+
+export const CHANGE_MODE="CHANGE_MODE";
+
+export const SET_SCREEN="SET_SCREEN";
+export const LOAD_MAP_BUILDINGS="LOAD_MAP_BUILDINGS";
+
+export const SET_FROM_INPUT = "SET_FROM_INPUT";

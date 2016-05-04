@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+
+    <!-- Bootstrap -->
+
+    <meta name="keywords" content="上海办公室出租、上海写字楼出租、上海商务中心出租、上海产业园出租、上海创业园出租、苏州办公
+
+    室出租、苏州写字楼出租、苏州商务中心出租、苏州产业园出租、苏州创业园出租、苏州写字楼租赁网、上海写字楼出租网、写字楼租赁、
+
+    办公室出租。">
+
+    <meta name="description" content="楼天下提供上海、苏州最真实写字楼出租、免费装修设计，为广大企业提供最优质的服务和最真实的
+
+    房源。">
+      <meta name="viewport" content="width=device-width, initial-scale=0.3, user-scalable=yes" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.min.js"></script>
+      <script src="lib/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=37fQZDRYjBGdpbM3zXe1YNEK"></script>
+    <!-- build:css({.tmp,src}) build/business.css -->
+      <link href="../build/business.css" rel="stylesheet">
+    <!-- endbuild -->
+
+      <!-- <title id="htmlTitle"></title> -->
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFJ595"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WFJ595');</script>
+<!-- End Google Tag Manager -->
+   <header class="detail">
+        <div class="wrap">
+          <a href="index.html">  <img src="img/logo.png" /></a>
+          <div>
+            <span id="location">上海</span>
+            <img src="img/arrow_bottom_grey.png" width="8" height="4px" alt="">
+
+            <div id="citys">
+              <a city-id="802" href="listImgs.html?cityId=802">上海</a>
+              <a city-id="867"  href="listImgs.html?cityId=867">苏州</a>
+            </div>
+          </div>
+          <p class="listSearch">
+            <img  src="img/youhui.png"  style="margin-right:6px;" alt="" />
+            <a   href="service.html" style="margin-right:30px;">企业服务</a>
+            <img  src="img/fabu-pic.png"  style="margin-right:6px;" alt="" />
+            <a   href="release.html" style="margin-right:30px;">发布房源</a>
+            <img src="img/weituo-pic.png"  style="margin-right:6px;" alt="" />
+            <a   href="entrust.html">委托找楼</a>
+            <!-- <img  src="img/datumode.png"  style="margin-right:6px;" alt="" />
+            <a   id="datuMode" href="listImgs.html" style="margin-right:30px;">大图模式</a>
+            <img src="img/mapmode.png"  style="margin-right:6px;" alt="" />
+            <a  id="dituMode"  href="listImgs.html?mode=1">地图模式</a> -->
+          </p>
+        </div>
+      </header>
+      <div class="detail_title wrap">
+        <p>
+          <span  id="fullName"> </span>
+
+          <span id="address">
+
+          </span>
+        </p>
+      </div>
+
+      <nav class="project">
+        <ul >
+		        <li ><a href="#info" class="menuItem">项目信息</a></li>
+            <li><a href="#rent" class="menuItem">在租房源</a></li>
+		        <li><a href="#para" class="menuItem">项目参数</a></li>
+		        <li><a href="#disc" class="menuItem">项目描述</a></li>
+		        <li><a href="#around" class="menuItem">周边配套</a></li>
+
+	      </ul>
+      </nav>
+
+
+
+
+      <div class="show_images wrap" id="info">
+        <div class="left">
+          <img src="" alt="" width="560px;"  style="margin-top:-35px;" />
+
+        </div>
+        <div class="middle">
+            <div class="up">
+              <img src="" alt="" />
+            </div>
+            <div class="imgs">
+
+            </div>
+            <div class="down">
+              <img src="" alt="" />
+            </div>
+        </div>
+       <div class="right">
+             <p style="padding:20px 13px">
+              <label >租金范围&nbsp&nbsp:</label>  <span id="rentMin"></span>-<span id="rentMax"></span>元/m<sup>2</sup>.天
+            </p>
+            <p style="padding:20px 13px">
+              <label >物&nbsp   业&nbsp   费&nbsp&nbsp:</label>  <span id="propertyFee"></span>元/m<sup>2</sup>.月
+            </p>
+            <p style="padding:20px 13px">
+              <label >总&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp高&nbsp&nbsp:</label>  <span id="maxFloorCount"></span>层
+            </p>
+            <p style="padding:20px 13px">
+              <label >年&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp代&nbsp&nbsp:</label>  <span id="buildYears"></span>
+            </p>
+            <a    class="add"  id="appointment" rel="sidebar" style="margin-top:10px">
+                在线预约
+            </a>
+            <div class="tel" id="contactMobile">
+
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="project_rent" id="rent">
+        <div class="wrap ">
+            <span>在租房源</span>
+            <ul class="rent">
+              <li class="title">
+                <span>面积</span>
+                <span>租金</span>
+                <span>图片</span>
+              </li>
+            </ul>
+            <div class="more">
+                  查看更多
+            </div>
+        </div>
+      </div>
+
+
+      <div class="project_para" id="para">
+      	<div class="wrap">
+      		<div class="project_para_title">项目参数</div>
+      		<ul class="project_ul">
+
+      			<li class="project_li">
+      				<div class="pl_head">得房率：</div>
+      				<div class="pl_value" ><span id="roomRate"></span>%</div>
+      			</li>
+
+            <li class="project_li">
+      				<div class="pl_head">货梯：</div>
+      				<div class="pl_value" id="goodLiftCount">2</div>
+      			</li>
+
+            <li class="project_li">
+              <div class="pl_head">空调系统：</div>
+              <div class="pl_value" id="aircondition"></div>
+            </li>
+
+            <li class="project_li">
+      				<div class="pl_head">客梯：</div>
+      				<div class="pl_value" id="passengerLiftCount">8</div>
+      			</li>
+
+            <li class="project_li">
+              <div class="pl_head">写字楼体量：</div>
+              <div class="pl_value" ><span id="officeVolume"></span>m<sup>2</sup></div>
+            </li>
+
+
+
+
+            <li class="project_li">
+              <div class="pl_head">地上停车位：</div>
+              <div class="pl_value" id="parkingSpaceUp">0</div>
+            </li>
+      			<li class="project_li">
+      				<div class="pl_head">开发商：</div>
+      				<div class="pl_value" id="developers"></div>
+      			</li>
+
+            <li class="project_li">
+              <div class="pl_head">地下停车位：</div>
+              <div class="pl_value" id="parkingSpaceDown"></div>
+            </li>
+      			<div style="clear:both;"></div>
+      		</ul>
+      	</div>
+      </div>
+      <div class="project_desc"  id="disc">
+        <div class="wrap">
+          <div class="project_desc_main">
+            <span>项目描述</span>
+            <div id="description">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="around" id="around">
+        <div class="wrap">
+          <div class="top">
+            周边配套
+          </div>
+
+          <div class="item" id="transit">
+            <div class="left">
+              <img src="../img/subway.png" alt="" />
+            </div>
+
+            <div class="title" >
+              <span>地铁/公交</span>
+            </div>
+            <div class="num">
+              <span>约<span class="total"></span>个站点</span>
+            </div>
+            <div class="content">
+
+            </div>
+            <footer>
+              在地图上显示
+            </footer>
+          </div>
+          <div class="item" id="food">
+            <div class="left">
+              <img src="../img/food.png" alt="" />
+            </div>
+
+            <div class="title">
+              <span>美食</span>
+            </div>
+            <div class="num">
+              <span>约<span class="total"></span>家餐厅</span>
+            </div>
+            <div class="content">
+
+            </div>
+            <footer>
+              在地图上显示
+            </footer>
+          </div>
+          <div class="item" id="bank">
+            <div class="left">
+              <img src="../img/bank.png" alt="" />
+            </div>
+
+            <div class="title">
+              <span>银行</span>
+            </div>
+            <div class="num">
+              <span>约<span class="total"></span>家银行</span>
+            </div>
+            <div class="content">
+
+            </div>
+            <footer>
+              在地图上显示
+            </footer>
+          </div>
+          <div class="item" id="hotel">
+            <div class="left">
+              <img src="../img/hotel.png" alt="" />
+            </div>
+
+            <div class="title">
+              <span>酒店</span>
+            </div>
+            <div class="num">
+              <span>约<span class="total"></span>个酒店</span>
+            </div>
+            <div class="content">
+
+            </div>
+            <footer>
+              在地图上显示
+            </footer>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="projectMap"></div>
+
+      <footer >
+        <div class="introduce" style="background-color:#eee;overflow:hidden;height:210px">
+          <div class="wrap">
+              <img src="./img/footer.png" alt="" width="1000px" height="210px"/>
+          </div>
+
+        </div>
+      	</footer>
+        <div class="bottom gray">
+          <div class="wrap">
+            <div class="left">
+              <span>关注“楼天下”</span>
+              <img src="./img/erweima.png" alt="" />
+            </div>
+            <div class="middle">
+              <span>客服电话</span>
+              <div class="content">
+                <span id="telphone">
+                  400-996-5583
+                </span>
+                <span>
+                  服务时间：周一至周五9:00－21：00
+                </span>
+              </div>
+
+            </div>
+            <div class="right">
+              <span>公司信息</span>
+              <div class="content">
+                <a href="aboutus.html">关于我们</a><br>
+                <a href="contactus.html">加入我们</a>
+              </div>
+            </div>
+            <img src="./img/footer-pic.png" alt="" />
+            <section>
+                Copyright2015 <span id="company"></span>有限公司 版权所有 ICP号： <a id="filingNumber"  href="http://www.miitbeian.gov.cn">沪ICP备15041393号</a>
+
+            </section>
+          </div>
+        </div>
+
+        <div class="appointment-online">
+          <section>
+            <div class="close">
+              x
+            </div>
+            <div class="title">
+                在线预约
+            </div>
+            <input type="text" id="appointment-name"  name="name" placeholder="称呼" name="name" value="">
+            <input type="text" id="appointment-tel" name="tel" placeholder="手机/座机" name="name" value="">
+            <div class="error">
+
+            </div>
+            <div class="sure" id="appointment-sure">
+              立即预约
+            </div>
+          </section>
+        </div>
+
+        <div class="show_imgs">
+          <div class="close">
+          </div>
+          <div class="left">
+          </div>
+          <div class="right">
+          </div>
+          <div class="img-contain">
+            <div class="img-center">
+              <img src="./img/default_bb.png" alt="" />
+            </div>
+          </div>
+          <div class="img-list">
+            <div class="top">
+              显示照片列表
+
+            </div>
+            <ul>
+              <li class="active">
+                <div class=""></div>
+                <img src="./img/default_bb.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a class="event-entrance" href="./event.html">
+
+        </a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="lib/stickUp.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+    <script type="text/javascript" src="build/common.js"></script>
+    <script type="text/javascript" src="build/projectDetail.js"/></script>
+    <script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?625deefb2b6da0e2a5384e5f6b64f37e";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </body>
+</html>

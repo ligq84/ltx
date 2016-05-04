@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+
+    <!-- Bootstrap -->
+    <link href="build/business.css" rel="stylesheet">
+    <meta name="keywords" content="上海办公室出租、上海写字楼出租、上海商务中心出租、上海产业园出租、上海创业园出租、苏州办公
+
+    室出租、苏州写字楼出租、苏州商务中心出租、苏州产业园出租、苏州创业园出租、苏州写字楼租赁网、上海写字楼出租网、写字楼租赁、
+
+    办公室出租。 ">
+
+    <meta name="description" content="楼天下提供上海、苏州最真实写字楼出租、免费装修设计，为广大企业提供最优质的服务和最真实的
+
+    房源。">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.min.js"></script>
+      <script src="lib/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.3, initial-scale=0.3,target-densitydpi=low-dpi" />
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=37fQZDRYjBGdpbM3zXe1YNEK"></script>
+            <title id="htmlTitle"></title>
+  </head>
+  <body>
+      <header class="detail">
+        <div class="wrap">
+          <a href="index.html"><img src="img/logo.png" /></a>
+
+          <div>
+            <span id="location">上海</span>
+            <img src="img/arrow_bottom_grey.png" width="8" height="4px" alt="">
+            <div id="citys">
+               <a  city-id="802" href="listImgs.html?cityId=802">上海</a>
+               <a  city-id="867" href="listImgs.html?cityId=867">苏州</a>
+            </div>
+
+          </div>
+          <p class="listSearch">
+            <img src="img/list.png" alt="" />
+            <a href="listImgs.html">列表找楼</a>
+          </p>
+        </div>
+      </header>
+      <div class="detail_title wrap">
+        <p >
+          <span id="buildingName"></span>
+
+          <span id="address" style="margin-left:10px;">
+
+          </span>
+        </p>
+      </div>
+  <div class="detail_search wrap">
+      <a class="self have" id="areaAll" href="javascript:;" s="" e=""  >全部</a>
+    <a class="self"  id="areaYi" href="javascript:;"   s="0" e="100"  >100m<sup>2</sup>以下</a>
+    <a class="self" id="areaYiDaoEr" href="javascript:;" s="100" e="200" >100-200m<sup>2</sup></a>
+    <a class="self" id="areaErDaoSan" href="javascript:;" s="200" e="300" >200-300m<sup>2</sup></a>
+    <a class="self" id="areaSanDaoWu" href="javascript:;"  s="300" e="500" >300-500m<sup>2</sup></a>
+    <a class="self" id="areaWuDaoBa" href="javascript:;"  s="500" e="800" >500-800m<sup>2</sup></a>
+    <a class="self" id="areaBaDaoQian" href="javascript:;"  s="800" e="1000" >800-1000m<sup>2</sup></a>
+    <a class="self" id="areaQian" href="javascript:;" s=1000 e="" >>1000m<sup>2</sup></a>
+      <a href="javascript:void(0);" style="border-right:0px;cursor:pointer">
+        <input type="text" id="start" ><img style="vertical-align:top" src="img/hengxian.png" alt="" /><input id="end"    type="text"></a>
+      <a href="javascript:void(0);"  class="last"><div >搜索</div>
+    </a>
+    </div>
+    <div class="detail_fixed" style="background-color:#fff;z-index:999;width:100%">
+
+      <div class="detail_option wrap">
+          <img src="img/left.png" style="margin-right:10px" alt="" id="left"/>
+          <img src="img/right_active.png" style="float:right;"alt="" id="right"/>
+      </div>
+    </div>
+
+      <div class="show_images wrap">
+      <div class="left">
+        <img src="img/default_bb.png" alt="" width="560px;"  style="margin-top:-35px;"/>
+
+      </div>
+      <div class="middle">
+          <div class="up">
+              <img src="" alt="" />
+          </div>
+          <div class="imgs">
+
+          </div>
+          <div class="down">
+              <img src="" alt="" />
+          </div>
+      </div>
+      <div class="right">
+          <p class="first">
+            <label >面&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp积&nbsp&nbsp:</label>  <span id="area"></span>m<sup>2</sup><br>
+
+          </p>
+          <p class="first">
+              <label >日&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp租&nbsp&nbsp:</label>  <span id="rentUnitPrice"></span>元/m<sup>2</sup>.天
+          </p>
+          <p>
+            <label >月&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp租&nbsp&nbsp:</label>  <span id="rentPrice"></span>元/月
+          </p>
+          <p>
+            <label >楼&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp层&nbsp&nbsp:</label>  <span id="floor"></span>
+          </p>
+          <p>
+            <label >装&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp修&nbsp&nbsp:</label>  <span id="decorate"></span>
+          </p>
+          <p>
+            <label >朝&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp向&nbsp&nbsp:</label>  <span id="orientation"></span>
+          </p>
+          <a class="add" rel="sidebar">
+              加入收藏
+          </a>
+          <p class="tel">
+            <span id="mobilephone"></span>
+          </p>
+
+      </div>
+
+    </div>
+    <div class="detail_plan">
+        <div class="wrap">
+
+              <div class="detail_plan_main">
+                <span>房源所在楼层平面图</span>
+                <img src="" alt="" width="560px;"/>
+              </div>
+        </div>
+    </div>
+
+    <div class="detail_desc">
+
+      <div class="wrap">
+
+
+      <div class="detail_desc_main">
+        <span>房源描述</span>
+        <div id="description">
+
+        </div>
+      </div>
+      </div>
+    </div>
+      <div id="floorMap"></div>
+    <footer >
+      Copyright2015 上海好楼网络科技有限公司 版权所有 ICP号： <a style="color:#333333"  href="http://www.miitbeian.gov.cn">沪ICP备15041393号</a>
+
+    	</footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script  type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script  type="text/javascript"  src="lib/jquery.pin.min.js"></script>
+    <script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+    <script type="text/javascript" src="build/common.js"></script>
+    <script type="text/javascript" src="build/floorDetail.js"/></script>
+    <script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?625deefb2b6da0e2a5384e5f6b64f37e";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </body>
+</html>

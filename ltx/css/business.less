@@ -1,0 +1,324 @@
+@import "node_modules/bootstrap/less/bootstrap.less";
+@import "index.less";
+@import "floorDetail.less";
+@import "project.less";
+@import "item.less";
+@import "map.less";
+@import "wait.less";
+@import "aboutus.less";
+@import "entrustRelease.less";
+@import "service.less";
+@import "special.less";
+@import "event.less";
+body{font-size: 12px;font-family: "微软雅黑";font-color:#333;}
+
+html {
+
+  overflow-x: hidden;
+}
+
+
+
+.wodetian {
+  background-color: red;
+}
+
+
+
+
+a.event-entrance {
+
+  position: fixed;
+  width: 100px;
+  height: 140px;
+  background: url("../img/event/rukou.png") center no-repeat;
+  bottom: 40px;
+  right: 60px;
+  z-index: 9999;
+
+  
+}
+
+
+
+div.show_images {
+  padding: 0px 0px 10px 0px;
+white-space:nowrap;
+position: relative;
+font-size: 0px;
+  >div.left {
+    margin-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    width: 560px;
+    height: 350px;
+  }
+
+  >div.middle {
+    margin-top: 10px;
+    margin-left: 5px;
+    white-space: normal;
+    vertical-align: top;
+    display: inline-block;
+    width: 100px;
+    height: 350px;
+    >div.up {
+     height: 30px;
+    padding: 5px;
+     text-align: center;
+     width: 100%;
+
+
+    }
+    >div.down {
+      height: 30px;
+
+      text-align: center;
+      width: 100%;
+      padding: 15px;
+
+    }
+    >div.imgs {
+      white-space: normal;
+      width: 100px;
+      height: 290px;
+      margin: 0px;
+      padding: 0px 10px;
+      overflow: hidden;
+      >img {
+          position: relative;
+        margin-bottom: 10px;
+        top:0px;
+        &.active {
+          border: 3px solid #c80000;
+        }
+      }
+    }
+  }
+
+  >div.right {
+    padding-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    zoom: 1;
+
+    background-color: #fff;
+    position/*\**/:static\9;
+
+
+    >p {
+      line-height: 13px;
+      width: 330px;
+      margin-bottom: 0px;
+      padding: 12px 13px;
+      font-size: 14px;
+
+      &:first-child {
+        color: #C80000;
+        background-color: #F9E5E5;
+        // margin-right: 6px
+      }
+
+      &.first {
+        color: #C80000;
+        background-color: #F9E5E5;
+      }
+      >label {
+          font-size: 14px;
+          font-weight: normal;
+          text-align: right;
+          width: 120px;
+          margin-bottom: 0px;
+          color: #333333;
+          margin-right: 20px;
+
+      }
+
+    }
+    >.add {
+      width: 330px;
+      margin-bottom: 0px;
+      padding: 13px;
+      font-size: 14px;
+        color: #C80000;
+        font-size: 20px;
+      text-align: center;
+      border: 2px solid #C80000;
+      padding: 10px 0px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      display: block;
+      height: 53px;
+    }
+    >.tel {
+
+      margin-bottom: 0px;
+      padding: 13px;
+      font-size: 14px;
+      width: 300px;
+      text-align: center;
+      background: #C80000;
+      padding: 15px 0px;
+      font-size: 20px;
+      color: #fff;
+      height: 59px;
+            width: 330px;
+            line-height: 29px;
+
+    }
+
+  }
+}
+
+
+a:focus {
+  outline: none;
+}
+
+footer {
+
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+  padding: 0px 0px 0px 0px;
+  font-weight: bold;
+
+  line-height: 70px;
+  // div.right {
+  //   float: right;
+  //   >span {
+  //     text-align: right;
+  //     padding-left: 30px;
+  //   }
+  // }
+
+
+
+}
+
+
+div.bottom {
+ &.gray {
+   background-color: #e0e0e0;
+ }
+
+
+  >div.wrap {
+    width: 1000px;
+    margin: auto;
+    font-size: 0px;
+    >div {
+      padding-top: 6px;
+      line-height: 46px;
+      font-size: 16px;
+      text-align: left;
+      color: #666;
+      >div.content {
+        line-height: 22px;
+        font-size: 14px;
+        >#telphone {
+          display: block;
+          line-height: 42px;
+          font-size: 42px;
+        }
+
+      }
+      &.left {
+        display: inline-block;
+        vertical-align: top;
+        width: 170px;
+        height: 170px;
+        >img {
+
+          width: 104px;
+          width: 104px;
+        }
+
+
+      }
+      &.middle {
+        display: inline-block;
+        vertical-align: top;
+        width: 326px;
+        height: 170px;
+
+
+      }
+      &.right {
+        display: inline-block;
+        vertical-align: top;
+        width: 170px;
+        height: 170px;
+
+      }
+    }
+    >img {
+      margin-top: 17px;
+      width: 306px;
+      height: 153px;
+
+
+    }
+    >section {
+      height: 60px;
+      border-top: 1px solid #ccc;
+      line-height: 60px;
+      text-align: left;
+
+      font-size: 12px;
+      color: #666;
+
+    }
+
+  }
+
+
+}
+
+
+sup {
+  top: -0.3em;
+  font-size: 12px;
+}
+
+
+* {
+font-family: "Microsoft YaHei" ! important;
+}
+
+ul.auto-complete {
+  max-height: 400px;
+  overflow: auto;
+  position: absolute;
+  display: none;
+  width: 120px;
+  height: auto;
+  background-color: #eee;
+  z-index: 1000;
+  >li {
+    padding: 2px 10px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  >li:hover {
+    background-color: #fff;
+    cursor: pointer;
+
+  }
+
+}
+p.listSearch {
+  font-size: 14px;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  >a {
+    color: #333333;
+    vertical-align: middle;
+  }
+
+}
